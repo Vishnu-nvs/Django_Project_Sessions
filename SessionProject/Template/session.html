@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Session Management</h1>
+    <p>page count {{ value }}</p>
+    <p> Expire Time :{{ ex_age }} sec</p>
+    <p>Expiry date: {{ date }}</p>
+
+    <h1><a href="{% url 'delete' %}">Delete Session</a></h1>
+
+</body>
+</html>
